@@ -1,9 +1,8 @@
-import React from 'react'
-// import 'boxicons';
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 const Footer = () => {
+  
   return (
     <div className='footer'>
         <div className='footer-icons'>

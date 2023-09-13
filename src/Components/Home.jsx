@@ -1,24 +1,16 @@
-// import React, { useEffect, useState } from 'react'
 import HeroBox from './HeroBox'
 import Navbar from './Navbar'
-// import MovieList from './MovieList'
-import image from '../assets/MV5BMTk3ODA4Mjc0NF5BMl5BcG5nXkFtZTgwNDc1MzQ2OTE@ 1.png';
-import image1 from '../assets/PngItem_1381056 1.svg';
 import Footer from './Footer';
 import useFetch from './useFetch';
-import { Link } from 'react-router-dom';
-import { FaHeart } from "react-icons/fa";
-import { IconContext } from "react-icons";
 import { useState } from 'react';
 import Card from './Card';
 
-
+// https://api.themoviedb.org/3/movie/top_rated?api_key=850136383d9112b1fa4ef05d1d27c587
 
 const Home = () => {
     
-    // include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc
     
-   const {data:movieLists, error, loading} = useFetch('https://api.themoviedb.org/3/discover/movie?api_key=850136383d9112b1fa4ef05d1d27c587')
+   const {data:movieLists, error, loading} = useFetch('https://api.themoviedb.org/3/movie/top_rated?api_key=850136383d9112b1fa4ef05d1d27c587')
     // console.log(movieLists)
     const [isClicked, setIsClicked] = useState(false);
     const handleClick = () => {

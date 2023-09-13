@@ -9,8 +9,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/movies/:id' element={<MovieDetails />}/>
-        <Route />
-      </Routes>
+       </Routes>
     </div>
   );
 }
