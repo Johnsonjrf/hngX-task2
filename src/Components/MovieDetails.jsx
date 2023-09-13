@@ -58,8 +58,8 @@ const MovieDetails = () => {
                 </div>
                 <div className='sub-row2'>
                   <div className='explore-btns'>
-                    <a>See showtimes</a>
-                    <a>More watch options</a>
+                    <a href='http'>See showtimes</a>
+                    <a href='http'>More watch options</a>
                   </div>
                   
                   <div className='mixed-posters'>
